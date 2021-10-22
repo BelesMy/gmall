@@ -3,11 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.6</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.atguigu.gmall</groupId>
+        <artifactId>gmall-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
+
+
     <groupId>com.atguigu.gmall</groupId>
     <artifactId>gmall-user</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -42,16 +43,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>mapper-spring-boot-starter</artifactId>
-            <version>2.1.5</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-jdbc</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.atguigu.gmall</groupId>
+            <artifactId>gmall-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
+
     </dependencies>
 
     <build>
