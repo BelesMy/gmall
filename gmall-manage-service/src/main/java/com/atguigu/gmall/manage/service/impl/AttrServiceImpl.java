@@ -42,7 +42,7 @@ public class AttrServiceImpl implements AttrService {
             pmsBaseAttrValues = pmsBaseAttrValueMapper.select(pmsBaseAttrValue);
             baseAttrInfo.setAttrValueList(pmsBaseAttrValues);
         }
-
+        
         return pmsBaseAttrInfos;
     }
 

@@ -1,6 +1,4 @@
 package com.atguigu.gmall.manage.controller;
-
-
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.atguigu.gmall.bean.PmsSkuInfo;
 import com.atguigu.gmall.service.SkuService;

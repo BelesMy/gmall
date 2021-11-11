@@ -14,13 +14,13 @@
     <artifactId>gmall-common-util</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <dependencies>
 
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -54,6 +54,7 @@
             <artifactId>commons-codec</artifactId>
         </dependency>
 
+
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
@@ -74,6 +75,8 @@
             <groupId>com.gitee.reger</groupId>
             <artifactId>spring-boot-starter-dubbo</artifactId>
         </dependency>
+
+
 
     </dependencies>
 
