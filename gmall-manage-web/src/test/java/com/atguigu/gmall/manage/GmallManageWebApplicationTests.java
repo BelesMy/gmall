@@ -28,14 +28,14 @@ public class GmallManageWebApplicationTests {
 		TrackerClient trackerClient = new TrackerClient();
 
 		// 获得一个trackerServer的实例
-		TrackerServer trackerServer = trackerClient.getConnection();
+		TrackerServer trackerServer = trackerClient.getTrackerServer();
 
 		// 通过tracker获得一个Storage链接客户端
 		StorageClient storageClient = new StorageClient(trackerServer,null);
 
 		String[] uploadInfos = storageClient.upload_file("d:/a.jpg", "jpg", null);
 
-		String url = "http://192.168.222.20";
+		String url = "http://192.168.149.128";
 
 		for (String uploadInfo : uploadInfos) {
 			url += "/"+uploadInfo;
