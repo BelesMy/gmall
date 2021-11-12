@@ -17,6 +17,7 @@
     <dependencies>
 
 
+
         <dependency>
             <groupId>com.atguigu.gmall</groupId>
             <artifactId>gmall-common-util</artifactId>
@@ -46,7 +47,12 @@
             <artifactId>jedis</artifactId>
         </dependency>
 
-
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+             <version>3.11.4</version>
+        </dependency>
 
     </dependencies>
 

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -28,9 +29,13 @@ public class ItemController {
     SpuService spuService;
 
     @RequestMapping("{skuId}.html")
-    public String item(@PathVariable String skuId,ModelMap map){
+    public String item(@PathVariable String skuId, ModelMap map, HttpServletRequest request){
 
-        PmsSkuInfo pmsSkuInfo = skuService.getSkuById(skuId);
+        String remoteAddr = request.getRemoteAddr();
+
+        // request.getHeader("");// nginx负载均衡
+
+        PmsSkuInfo pmsSkuInfo = skuService.getSkuById(skuId,remoteAddr);
 
         //sku对象
         map.put("skuInfo",pmsSkuInfo);
